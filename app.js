@@ -40,7 +40,7 @@ const update = (success) =>{
 let playAgain = true;
 const fail = () =>{
     result.style.display = 'block';
-    result.innerHTML = 'You loss' 
+    result.innerHTML = 'You lose' 
     update('lose')
 }
 const succed = () =>{
