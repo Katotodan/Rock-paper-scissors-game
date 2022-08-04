@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ccc;
+    height: 100vh;
+    
+    
+}
+
+h1{
+    text-align: center;
+    padding: 2rem ;
+    height: 15%;
+    width: 100%;
+    
+}
+main{
+    display: flex;
+    height: 85%;
+    
+}
+div{
+    display: inline-block;
+    width: 100%;
+    text-align: center; 
+    background: linear-gradient(90deg, rgb(204,204,204), rgb(240,240,240), rgb(204,204,204) );
+    height: 100%;
+}
+h2{
+    margin: 1rem 0;
+}
+.start{
+    color: rgb(123, 112, 112);
+   
+}
+span{
+    display: inline-block;
+    margin: 4rem 1rem;
+    padding: 0.5rem;
+    font-size: 3rem;
+}
+
+#player span:hover{
+    background-color: whitesmoke;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+#result{
+    position: absolute;
+    top: 80%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.loader{
+    display: inline-block;
+    font-size: 3rem;
+    animation: load 1s ease-in-out 0s infinite normal none;
+    display: none;
+    margin: 4rem 1rem;
+}
+@keyframes load {
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+article{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+    background-color: #ccd;
+    width: 50%;
+    height: 30%;
+    text-align: center;
+    display: none;
+}
+article h2{
+    margin: 3rem 0;
+}
+button{
+    width: 20%;
+    padding: 0.5rem;   
+}
+@media screen and (max-width:608px ){
+    span{
+        margin: 4rem 0.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+    article{
+        left: 10%;
+        width: 80%;
+    }
+    article h2{
+        margin: 1.5rem 0 1rem 0;
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:526px ){
+    span{
+        margin: 4rem 0.3rem;
+        padding: 0.2rem;
+        font-size: 1.5rem;
+    }
+    article{
+        left: 5%;
+        width: 90%;
+    }
+    article h2{
+        margin: 1.5rem 0 1rem 0;
+        font-size: 1.2rem;
+    }
+    button{
+        width: 30%;
+    }
+}
+@media screen and (max-width:374px ){
+    main{
+        display: block;
+    }
+    main div{
+        height: 50%;
+    }
+    main div aside{
+        height: 6%;
+        width: 100%;
+    }
+    main div aside span, main div aside i, main div aside p{
+        margin: 0;
+    }
+    main span,.loader{
+        margin: 1rem 0.5rem;
+        font-size: 1.2rem;
+    }
+    #result{
+        top: 90%;
+        font-size: 1.2rem;
+    }
+}
+
+
