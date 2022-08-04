@@ -131,7 +131,7 @@ button{
     main div{
         height: 48%;
     }
-    main div{
+    main div:last-child{
         height: 52%;
     }
     main div aside{
