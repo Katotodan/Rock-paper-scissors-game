@@ -129,7 +129,10 @@ button{
         display: block;
     }
     main div{
-        height: 50%;
+        height: 48%;
+    }
+    main div{
+        height: 52%;
     }
     main div aside{
         height: 6%;
